@@ -1,0 +1,53 @@
+#Liczba zmiennych (ile funkcja ma zmiennych?)
+#Np. jesli z = z(x,y) to nalezy ustawic na 2
+#Jesli np z = z(a,b,c) to nalezy ustawic na 3
+3
+# u nas narazie mamy zaleznosc od 1 zmiennej :)
+
+#Czy liczymy minimum czy maksimum?
+# 1 --- MAX   0 --- MIN   (inne wartosci powoduja blad i przerwanie programu)
+0
+
+#Ograniczenia dla poszczegolnych zmiennych
+-5.12 5.12
+-5.12 5.12
+-5.12 5.12
+
+#0 15   #2
+#-1 3.14  #3
+#0.2 10.0   #4
+#-10.0 10.0   #5
+#-10.0 10.0   #6
+#-10.0 10.0   #7
+#-10.0 10.0   #8
+#-10.0 10.0   #9
+#-10.0 10.0   #10
+
+
+#Wielkosc populacji:
+1000
+
+#Ilosc pokolen:
+1000
+
+#Dokladnosc wyniku:
+0.0001
+
+
+#Okre¶la czy mutacja ma byæ sta³a czy zmienna w czasie
+# 1 - Sta³a   0 - Zmienna
+1
+
+#Okre¶la czy algorytm ma krzy¿owaæ, czy te¿ nie
+#w niektórych przypadkach op³aca siê nie krzy¿owaæ.
+# 0 - NIE Krzy¿owaæ    1 - Krzy¿owaæ
+0
+
+
+#Czy pod koniec liczenia staraæ siê uzyskaæ lepszy wynik metod± powella?
+# 1 - TAK    0 - NIE
+1 
+
+#Wypisuj postêp na ekranie:
+# 1 - TAK    0 - NIE
+1

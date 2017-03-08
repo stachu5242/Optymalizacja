@@ -1,0 +1,22 @@
+CC=g++
+SRCS=brent.cpp mnbark.cpp macierz.cpp linmin.cpp powell.cpp
+OBJ=brent.o mnbark.o macierz.o linmin.o powell.o
+FLAGS=-Wall -pedantic -O3
+PROGRAM=genetic
+all:$(PROGRAM)
+
+$(PROGRAM):$(OBJ)
+	$(CC) $(FLAGS) $(OBJ) -o $(PROGRAM)
+#	rm *.o
+#slice.o: slice.tcc
+#$(CC) -c slice.tcc
+brent.o: brent.cpp
+	$(CC) $(FLAGS) -c brent.cpp
+macierz.o: macierz.cpp
+	$(CC) $(FLAGS) -c macierz.cpp
+linmin.o: linmin.cpp
+	$(CC) $(FLAGS) -c linmin.cpp
+mnbark.o: mnbark.cpp
+	$(CC) $(FLAGS) -c mnbark.cpp
+powell.o: powell.cpp
+	$(CC) $(FLAGS) -c powell.cpp

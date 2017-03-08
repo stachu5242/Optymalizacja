@@ -1,0 +1,1428 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-2">
+<title>Silnik Genetyczny: zagadnienie_class class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Strona&nbsp;główna</a> | <a class="qindex" href="namespaces.html">Lista przestrzeni nazw</a> | <a class="qindex" href="annotated.html">Lista&nbsp;klas</a> | <a class="qindex" href="files.html">Lista&nbsp;plików</a> | <a class="qindex" href="functions.html">Składowe&nbsp;klas</a> | <a class="qindex" href="globals.html">Składowe&nbsp;plików</a></div>
+<h1>Dokumentacja klasy zagadnienie_class</h1>Główna klasa silnika genetycznego.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="GAzagadnienie_8h-source.html">GAzagadnienie.h</a>&gt;</code>
+<p>
+Diagram współpracy dla zagadnienie_class:<p><center><img src="classzagadnienie__class__coll__graph.jpg" border="0" usemap="#zagadnienie__class__coll__map" alt="Collaboration graph"></center>
+<map name="zagadnienie__class__coll__map">
+<area href="classosobnik__class.html" shape="rect" coords="254,408,348,432" alt="">
+</map>
+<center><font size="2">[<a href="graph_legend.html">legenda</a>]</font></center><a href="classzagadnienie__class-members.html">Lista wszystkich składowych.</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a0">ewolucja</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda klasy odpowiedzialna za przebieg reprodukcji mutacji i krzyzowania.  <a href="#a0"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a1">krzyzowanie_1</a> (<a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;, <a class="el" href="classosobnik__class.html">osobnik_class</a>)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Krzyżowanie nr 1.  <a href="#a1"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a2">krzyzowanie_2</a> (<a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;, <a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Krzyżowanie nr 2.  <a href="#a2"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>bool&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a3">losuj01</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja losujaca liczbe 0 lub 1  <a href="#a3"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a4">losuj0do1</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja losuje liczbę _z przedziału_ &lt;0 ; 1)  <a href="#a4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a5">mutacja_stala</a> (<a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda mutująca osobnika ze stałym prwadopodobieństwem.  <a href="#a5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a6">mutacja_zmienna</a> (<a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda mutująca osobnika ze zmiennym prawdopodobieństwem.  <a href="#a6"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a7">punkt</a> (<a class="el" href="classosobnik__class.html">osobnik_class</a>)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja zwraca "poprawione" (z przesunięciem) współrzędne punktu dla dowolnego osobnika.  <a href="#a7"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a8">punkt</a> (int)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja zwraca "poprawione" (z przesunięciem) współrzędne punktu.  <a href="#a8"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a9">reprodukcja</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja odpowiedzialna jest za reprodukcję populacji.  <a href="#a9"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a10">wypisz_osobnikow</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza wypisuje "wartości" wszystkich osobników z populacji.  <a href="#a10"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a11">wypisz_wartosci_osobnikow</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza wypisuje wartosci osobnikow.  <a href="#a11"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a12">wypisz_wartosci_osobnikow_new</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Podobnie jak wyzej.  <a href="#a12"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a13">wypisz_zmienne</a> (int a=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Metoda pomocnicza (wypisuje wszystkie zmienne z klasy.  <a href="#a13"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#a14">zagadnienie_class</a> (string="INPUT")</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Konstruktor klasy.  <a href="#a14"></a><br><br></td></tr>
+<tr><td colspan=2><br><h2>Atrybuty prywatne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>bool&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r0">czy_krzyzowac</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienna określa czy mam krzyżować osobniki czy też nie.  <a href="#r0"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>unsigned long&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r1">dobry_kierunek_rozwoju</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienna okresla ile razy populacja rozwijała się w dobrą stronę.  <a href="#r1"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r2">dokladnosc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">dokladnosc z jaka liczymy maksimum.  <a href="#r2"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r3">ewolucja_ukierunkowana</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Po jakakim procencie ewolucji zredukować do 0.0 mutacje znaczącą.  <a href="#r3"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r4">GrupaOsobnikowDoRozrzucenia</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Procent osobników przeznaczony do "rozrzutu".  <a href="#r4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>unsigned long&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r5">ile_zmutowalem</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienna mówi ile osobników z danej populacji już się zmutowało.  <a href="#r5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>unsigned int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r6">ilosc_pokolen</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ile pokolen (generacji) ma przejsc dany problem.  <a href="#r6"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>unsigned int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r7">ilosc_zmiennych</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ilosc zmiennych od ktorych zalezna jest funkcja.  <a href="#r7"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>bool&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r8">maksimum</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">zmienna okresla czy liczymy minimum czy maksimum.  <a href="#r8"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r9">max</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Maksymalna jak dotąd znaleziona wartość (osobnika).  <a href="#r9"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r10">min</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Najmniejsza znaleziona wartość funkcji.  <a href="#r10"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>bool&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r11">mut_stala</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienna określa czy mamy mutować ze stałym prawdop. czy nie.  <a href="#r11"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classosobnik__class.html">osobnik_class</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r12">najlepszy_osobnik</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Najlepszy dotychczas znaleziony osobnik.... (wstawiany jest do nowej populacji).  <a href="#r12"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; <a class="el" href="classosobnik__class.html">osobnik_class</a> &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r13">nowa_populacja</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wektor osobników który wchodzi do nowej populacji.  <a href="#r13"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r14">p_mutacji_stalej</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienna mowiaca z jakim prawdopodobienstwem mam mutowac geny.  <a href="#r14"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r15">p_mutacji_zmiennej_nie_z_1</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Z jakim prawdopodobieństwem mutować geny mniej znaczące.  <a href="#r15"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r16">p_mutacji_zmiennej_nie_z_2</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Podobnie do p_mutacji..._nie_z_1 lecz dla 2 części populacji.  <a href="#r16"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r17">p_mutacji_zmiennej_z_1</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Z jakim prawdopodobienstwem mutować geny znaczące.  <a href="#r17"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r18">p_mutacji_zmiennej_z_2</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">To samo co p_mutacji..._z_1 lecz dla osobników z 2 części populacji.  <a href="#r18"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; <a class="el" href="classosobnik__class.html">osobnik_class</a> &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r19">populacja</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wektor osobników - tworzy pokolenie.  <a href="#r19"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r20">procent_genow_znaczacych</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ilość genów znaczących.  <a href="#r20"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>bool&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r21">stosuj_powella</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienna okresla czy mam stosować w końcowej fazie metodę Powella.  <a href="#r21"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r22">suma</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Suma wartości osobników obecnego pokolenia.  <a href="#r22"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r23">suma_plus</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Suma wartości osobników obecnego pokolenia (powiększona).  <a href="#r23"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r24">suma_poprzednia</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Suma wartości osobników z poprzedniego pokolenia.  <a href="#r24"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classosobnik__class.html">osobnik_class</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r25">the_best</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Najlepszy jak dotąd znaleziony osobnik.  <a href="#r25"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>unsigned int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r26">wielkosc_populacji</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ilosc osobnikow w pokoleniu.  <a href="#r26"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>bool&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r27">wypisuj_postep</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienna określa czy na ekranie ma być widoczny postęp w liczeniu.  <a href="#r27"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; <a class="el" href="classzakres__class.html">zakres_class</a> &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r28">zakres</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zakres zmiennych (ograniczenia na poszczegolne zmienne).  <a href="#r28"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>unsigned long&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classzagadnienie__class.html#r29">zly_kierunek_rozwoju</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Zmienna określa ile razy populacja rozwijała się w złą stronę.  <a href="#r29"></a><br><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Główna klasa silnika genetycznego. 
+<p>
+Nie jest niestety doskonała :/ ale starałem się. 
+<p>
+<hr><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" name="a14" doxytag="zagadnienie_class::zagadnienie_class" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> zagadnienie_class::zagadnienie_class           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">string&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> = <code>"INPUT"</code>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Konstruktor klasy. 
+<p>
+Jako parametr przyjmuje nazwe pliku z danymi. Jesli nazwa <br>
+ nie zostala podana obiera domyslnie "INPUT"     </td>
+  </tr>
+</table>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="a0" doxytag="zagadnienie_class::ewolucja" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::ewolucja           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Metoda klasy odpowiedzialna za przebieg reprodukcji mutacji i krzyzowania. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a1" doxytag="zagadnienie_class::krzyzowanie_1" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::krzyzowanie_1           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classosobnik__class.html">osobnik_class</a>&nbsp;</td>
+          <td class="mdname" nowrap></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Krzyżowanie nr 1. 
+<p>
+Krzyżujemy osobnika w taki sposób, że lozujemy współrzędną <br>
+ i krzyżujemy tylko ją, a reszte z osobnika przepisujemy. <br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="zagadnienie_class::krzyzowanie_2" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::krzyzowanie_2           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Krzyżowanie nr 2. 
+<p>
+Krzyżujemy każdą ze współrzędnych oddzielnie.     </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="zagadnienie_class::losuj01" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> bool zagadnienie_class::losuj01           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja losujaca liczbe 0 lub 1 
+<p>
+Nie przyjmuje parametrow i dziala w prosty sposob: rand()  2 zwraca bool'a     </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="zagadnienie_class::losuj0do1" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double zagadnienie_class::losuj0do1           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja losuje liczbę _z przedziału_ &lt;0 ; 1) 
+<p>
+Nie trafimy nigdy na 1, ale możemy otrzymać zero. <br>
+ Należy pamiętać, że jest to ułamek (double)     </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="zagadnienie_class::mutacja_stala" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::mutacja_stala           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Metoda mutująca osobnika ze stałym prwadopodobieństwem. 
+<p>
+Nie zależy od niczego... Prawdopodobieństwo mutacji ustawione jest <br>
+ w miennej     </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="zagadnienie_class::mutacja_zmienna" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::mutacja_zmienna           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classosobnik__class.html">osobnik_class</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Metoda mutująca osobnika ze zmiennym prawdopodobieństwem. 
+<p>
+Zależy od tego jaki jest postęp w ewolucji (ile generacji <br>
+ przeszło już zagadnienie). <br>
+ Zależy od tego który jest osobnik w pokoleniu (ze względu na to <br>
+ że pierwszy osobnik jest najlepiej przystosowany osobnik <br>
+ jest zawsze na pierwszym miejscu w nowym pokoleniu <br>
+ dlatego też będziemy go mutować jak najbardziej w poszukiwaniu <br>
+ innych ekstremów i wartości największych.     </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="zagadnienie_class::punkt" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt; double &gt; zagadnienie_class::punkt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classosobnik__class.html">osobnik_class</a>&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Funkcja zwraca "poprawione" (z przesunięciem) współrzędne punktu dla dowolnego osobnika. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="zagadnienie_class::punkt" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt; double &gt; zagadnienie_class::punkt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Funkcja zwraca "poprawione" (z przesunięciem) współrzędne punktu. 
+<p>
+Działa tylko dla osobnika z populacji Chodzi tutaj o punkt wskazywany przez konkretnego osobnika. <br>
+ Funkcja punkt() z klasy <a class="el" href="classosobnik__class.html">osobnik_class</a> nie przesuwa współrzędnych... <br>
+ Musi to zrobić za nią powyższa funkcja z clasy zagadanienie_class. <br>
+ <br>
+ Funkcja pobiera numer osobnika w populacji. (Nie samego osobnika)     </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="zagadnienie_class::reprodukcja" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::reprodukcja           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Funkcja odpowiedzialna jest za reprodukcję populacji. 
+<p>
+Reprodukcja wybiera (dzięki funkcji dopasowania) najlepiej przystosowe <br>
+ osobniki w populacji, wylicza sumę wartości populacji, wybiera <br>
+ najlepiej przystosowanego osobnika w populacji, dokonuje porównań <br>
+ z najlepszym osobnikiem kiedykolwiek znalezionym, <br>
+ <br>
+ WAŻNE: <br>
+ Dopiero w tym miejscu następuje liczenie wartości funkcji <br>
+ w punkcie (osobniku).     </td>
+  </tr>
+</table>
+<a class="anchor" name="a10" doxytag="zagadnienie_class::wypisz_osobnikow" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::wypisz_osobnikow           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Metoda pomocnicza wypisuje "wartości" wszystkich osobników z populacji. 
+<p>
+Wypisije ich geny itp.     </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="zagadnienie_class::wypisz_wartosci_osobnikow" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::wypisz_wartosci_osobnikow           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Metoda pomocnicza wypisuje wartosci osobnikow. 
+<p>
+Wypisuje ich konkretna wartosc, wartosc_plus i roznice (po reprodukcji)     </td>
+  </tr>
+</table>
+<a class="anchor" name="a12" doxytag="zagadnienie_class::wypisz_wartosci_osobnikow_new" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::wypisz_wartosci_osobnikow_new           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Podobnie jak wyzej. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a13" doxytag="zagadnienie_class::wypisz_zmienne" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void zagadnienie_class::wypisz_zmienne           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em> = <code>0</code>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Metoda pomocnicza (wypisuje wszystkie zmienne z klasy. 
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" name="r0" doxytag="zagadnienie_class::czy_krzyzowac" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> bool <a class="el" href="classzagadnienie__class.html#r0">zagadnienie_class::czy_krzyzowac</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zmienna określa czy mam krzyżować osobniki czy też nie. 
+<p>
+true - Z Krzyżowaniem false - Bez Krzyżowania.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r1" doxytag="zagadnienie_class::dobry_kierunek_rozwoju" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> unsigned long <a class="el" href="classzagadnienie__class.html#r1">zagadnienie_class::dobry_kierunek_rozwoju</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zmienna okresla ile razy populacja rozwijała się w dobrą stronę. 
+<p>
+Suma wszystkich osobników była większa od sumy poprzedniego <br>
+ pokolenia.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r2" doxytag="zagadnienie_class::dokladnosc" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r2">zagadnienie_class::dokladnosc</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+dokladnosc z jaka liczymy maksimum. 
+<p>
+Zmienna wczytywana z pliku wejsciowego. <br>
+ Na podstawie tej wartosci ustala sie dlugosc chromosomu.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r3" doxytag="zagadnienie_class::ewolucja_ukierunkowana" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r3">zagadnienie_class::ewolucja_ukierunkowana</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Po jakakim procencie ewolucji zredukować do 0.0 mutacje znaczącą. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r4" doxytag="zagadnienie_class::GrupaOsobnikowDoRozrzucenia" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r4">zagadnienie_class::GrupaOsobnikowDoRozrzucenia</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Procent osobników przeznaczony do "rozrzutu". 
+<p>
+Chodzi o to żeby z większym prawdopodobieństwem <br>
+ szukać minimów i maksimów globalnych. <br>
+ Jest to procent osobników dla których prawdopodobieństwo <br>
+ mutacji dalszej jest większe. <br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="r5" doxytag="zagadnienie_class::ile_zmutowalem" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> unsigned long <a class="el" href="classzagadnienie__class.html#r5">zagadnienie_class::ile_zmutowalem</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zmienna mówi ile osobników z danej populacji już się zmutowało. 
+<p>
+Jest to zmienna pomocnicza, która określa czy osobnik z danej "grupy" należy od tak zwanej grupy rozrzutu, grupy poszukiwawczej     </td>
+  </tr>
+</table>
+<a class="anchor" name="r6" doxytag="zagadnienie_class::ilosc_pokolen" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> unsigned int <a class="el" href="classzagadnienie__class.html#r6">zagadnienie_class::ilosc_pokolen</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ile pokolen (generacji) ma przejsc dany problem. 
+<p>
+Okresla ile razy ewoluowac maja osobniki.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r7" doxytag="zagadnienie_class::ilosc_zmiennych" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> unsigned int <a class="el" href="classzagadnienie__class.html#r7">zagadnienie_class::ilosc_zmiennych</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+ilosc zmiennych od ktorych zalezna jest funkcja. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r8" doxytag="zagadnienie_class::maksimum" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> bool <a class="el" href="classzagadnienie__class.html#r8">zagadnienie_class::maksimum</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+zmienna okresla czy liczymy minimum czy maksimum. 
+<p>
+mozliwe wartosci: <br>
+ true - MAXIMUM zostanie policzone<br>
+ false - MINIMUM zostanie policzone<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="r9" doxytag="zagadnienie_class::max" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r9">zagadnienie_class::max</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Maksymalna jak dotąd znaleziona wartość (osobnika). 
+<p>
+Jak na razie jest mi potrzebna, ponieważ nie mam zdefiniowanego operatora <br>
+ przypisania osobnikowi innego osobnika, a tak będzie mi łatwiej szukać <br>
+ maksymalnej wartości.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r10" doxytag="zagadnienie_class::min" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r10">zagadnienie_class::min</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Najmniejsza znaleziona wartość funkcji. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r11" doxytag="zagadnienie_class::mut_stala" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> bool <a class="el" href="classzagadnienie__class.html#r11">zagadnienie_class::mut_stala</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zmienna określa czy mamy mutować ze stałym prawdop. czy nie. 
+<p>
+true - STALE prawdopodobienstwo false - ZMIENNE prawdopodobnienstwo     </td>
+  </tr>
+</table>
+<a class="anchor" name="r12" doxytag="zagadnienie_class::najlepszy_osobnik" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classosobnik__class.html">osobnik_class</a> <a class="el" href="classzagadnienie__class.html#r12">zagadnienie_class::najlepszy_osobnik</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Najlepszy dotychczas znaleziony osobnik.... (wstawiany jest do nowej populacji). 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r13" doxytag="zagadnienie_class::nowa_populacja" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt; <a class="el" href="classosobnik__class.html">osobnik_class</a> &gt; <a class="el" href="classzagadnienie__class.html#r13">zagadnienie_class::nowa_populacja</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Wektor osobników który wchodzi do nowej populacji. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r14" doxytag="zagadnienie_class::p_mutacji_stalej" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r14">zagadnienie_class::p_mutacji_stalej</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zmienna mowiaca z jakim prawdopodobienstwem mam mutowac geny. 
+<p>
+Wartosc ta jak narazie jest stala, ale mam w planach to zmienic.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r15" doxytag="zagadnienie_class::p_mutacji_zmiennej_nie_z_1" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r15">zagadnienie_class::p_mutacji_zmiennej_nie_z_1</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Z jakim prawdopodobieństwem mutować geny mniej znaczące. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r16" doxytag="zagadnienie_class::p_mutacji_zmiennej_nie_z_2" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r16">zagadnienie_class::p_mutacji_zmiennej_nie_z_2</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Podobnie do p_mutacji..._nie_z_1 lecz dla 2 części populacji. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r17" doxytag="zagadnienie_class::p_mutacji_zmiennej_z_1" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r17">zagadnienie_class::p_mutacji_zmiennej_z_1</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Z jakim prawdopodobienstwem mutować geny znaczące. 
+<p>
+Chodzi tutaj o mutację zmienną. są geny bardziej znaczące <br>
+ i mniej znaczące... dlatego mamy 2 zmienne. <br>
+ <br>
+ Na początku powinniśmy mutawać z większym prawdopodobieństwem <br>
+ geny bardziej znaczące aby dotrzeć do w miarę wszystkich ekstremów <br>
+ i wybrać to najlepsze. <br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="r18" doxytag="zagadnienie_class::p_mutacji_zmiennej_z_2" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r18">zagadnienie_class::p_mutacji_zmiennej_z_2</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+To samo co p_mutacji..._z_1 lecz dla osobników z 2 części populacji. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r19" doxytag="zagadnienie_class::populacja" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt; <a class="el" href="classosobnik__class.html">osobnik_class</a> &gt; <a class="el" href="classzagadnienie__class.html#r19">zagadnienie_class::populacja</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Wektor osobników - tworzy pokolenie. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r20" doxytag="zagadnienie_class::procent_genow_znaczacych" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r20">zagadnienie_class::procent_genow_znaczacych</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Ilość genów znaczących. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r21" doxytag="zagadnienie_class::stosuj_powella" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> bool <a class="el" href="classzagadnienie__class.html#r21">zagadnienie_class::stosuj_powella</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zmienna okresla czy mam stosować w końcowej fazie metodę Powella. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r22" doxytag="zagadnienie_class::suma" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r22">zagadnienie_class::suma</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Suma wartości osobników obecnego pokolenia. 
+<p>
+Wartość tej sumy nie jest jeszcze powiększona o abs() najmniejszego ujemnego elementu.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r23" doxytag="zagadnienie_class::suma_plus" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r23">zagadnienie_class::suma_plus</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Suma wartości osobników obecnego pokolenia (powiększona). 
+<p>
+Suma powiększona o abs() najmniejszego ujemnego elementu.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r24" doxytag="zagadnienie_class::suma_poprzednia" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double <a class="el" href="classzagadnienie__class.html#r24">zagadnienie_class::suma_poprzednia</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Suma wartości osobników z poprzedniego pokolenia. 
+<p>
+Na podstawie tej zmiennej możemy stwierdzić czy populacja rozwija się poprawnie <br>
+ i czy mutacje oraz krzyżowania dają coraz to lepsze rezultaty.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r25" doxytag="zagadnienie_class::the_best" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classosobnik__class.html">osobnik_class</a> <a class="el" href="classzagadnienie__class.html#r25">zagadnienie_class::the_best</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Najlepszy jak dotąd znaleziony osobnik. 
+<p>
+Zastanawiam się nad umieszczaniem najlepszego osobnika _zawsze_ <br>
+ w nowej populacji. Zastanawiam się także czy mutacja na tym osobniku <br>
+ nie powinna być dużo większa niż na pozostałych, ponieważ populacja będzie <br>
+ się zbliżała do niego, więc aby unikać maksimów lokalnych powinniśmy go <br>
+ mutować w poszukiwaniu innych maksimów.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r26" doxytag="zagadnienie_class::wielkosc_populacji" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> unsigned int <a class="el" href="classzagadnienie__class.html#r26">zagadnienie_class::wielkosc_populacji</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Ilosc osobnikow w pokoleniu. 
+<p>
+Zmienna najprawdopodobniej nie bedzie potrzebna <br>
+ ale zobaczymy.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r27" doxytag="zagadnienie_class::wypisuj_postep" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> bool <a class="el" href="classzagadnienie__class.html#r27">zagadnienie_class::wypisuj_postep</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zmienna określa czy na ekranie ma być widoczny postęp w liczeniu. 
+<p>
+Wczytywana jest ona z pliku jako ostatnia zmienna.     </td>
+  </tr>
+</table>
+<a class="anchor" name="r28" doxytag="zagadnienie_class::zakres" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt; <a class="el" href="classzakres__class.html">zakres_class</a> &gt; <a class="el" href="classzagadnienie__class.html#r28">zagadnienie_class::zakres</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zakres zmiennych (ograniczenia na poszczegolne zmienne). 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r29" doxytag="zagadnienie_class::zly_kierunek_rozwoju" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> unsigned long <a class="el" href="classzagadnienie__class.html#r29">zagadnienie_class::zly_kierunek_rozwoju</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Zmienna określa ile razy populacja rozwijała się w złą stronę. 
+<p>
+Suma wszystkich osobników była mniejsza od sumy poprzedniego <br>
+ pokolenia.     </td>
+  </tr>
+</table>
+<hr>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="GAzagadnienie_8h-source.html">GAzagadnienie.h</a><li><a class="el" href="GAzagadnienie_8cpp.html">GAzagadnienie.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Wygenerowano Thu May 27 19:51:31 2004 dla Silnik Genetyczny programem
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

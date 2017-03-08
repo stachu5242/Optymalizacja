@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-2">
+<title>Silnik Genetyczny: powell.cpp File Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Strona&nbsp;główna</a> | <a class="qindex" href="namespaces.html">Lista przestrzeni nazw</a> | <a class="qindex" href="annotated.html">Lista&nbsp;klas</a> | <a class="qindex" href="files.html">Lista&nbsp;plików</a> | <a class="qindex" href="functions.html">Składowe&nbsp;klas</a> | <a class="qindex" href="globals.html">Składowe&nbsp;plików</a></div>
+<h1>Dokumentacja pliku powell.cpp</h1><code>#include "<a class="el" href="globals_8h-source.html">globals.h</a>"</code><br>
+<code>#include "<a class="el" href="linmin_8h-source.html">linmin.h</a>"</code><br>
+<code>#include "<a class="el" href="macierz_8h-source.html">macierz.h</a>"</code><br>
+<code>#include "<a class="el" href="funkcja_8h-source.html">funkcja.h</a>"</code><br>
+
+<p>
+Wykres zależności załączania dla powell.cpp:<p><center><img src="powell_8cpp__incl.jpg" border="0" usemap="#powell.cpp_map" alt="Include dependency graph"></center>
+<map name="powell.cpp_map">
+<area href="globals_8h.html" shape="rect" coords="42,168,104,191" alt="">
+<area href="linmin_8h.html" shape="rect" coords="157,242,210,266" alt="">
+<area href="slice_8h.html" shape="rect" coords="343,93,389,117" alt="">
+<area href="macierz_8h.html" shape="rect" coords="267,242,334,266" alt="">
+<area href="funkcja_8h.html" shape="rect" coords="379,242,441,266" alt="">
+<area href="brent_8h.html" shape="rect" coords="128,168,176,191" alt="">
+<area href="mnbark_8h.html" shape="rect" coords="200,168,263,191" alt="">
+<area href="slice_8tcc.html" shape="rect" coords="338,168,394,191" alt="">
+</map>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Funkcje</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="powell_8cpp.html#a1">maksimum_powell</a> (std::vector&lt; double &gt; a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja potrzebna funkcji powell by ta mogła liczyć maksimum.  <a href="#a1"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="powell_8cpp.html#a0">powell</a> (std::vector&lt; double &gt; &amp;p, <a class="el" href="classmatrix.html">matrix</a> &amp;xi, double &amp;wartosc, double tol, double(*f)(std::vector&lt; double &gt;))</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja liczy metodą powella minimum lokalne.  <a href="#a0"></a><br><br></td></tr>
+</table>
+<hr><h2>Dokumentacja funkcji</h2>
+<a class="anchor" name="a1" doxytag="powell.cpp::maksimum_powell" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double maksimum_powell           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::vector&lt; double &gt;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Funkcja potrzebna funkcji powell by ta mogła liczyć maksimum. 
+<p>
+Zwraca wartość ujemną wywołania funkcji <a class="el" href="funkcja_8h.html#a0">funkcja(vector&lt; double &gt;)</a>;     </td>
+  </tr>
+</table>
+<a class="anchor" name="a0" doxytag="powell.cpp::powell" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> int powell           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::vector&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>xi</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>double &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>wartosc</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>double&nbsp;</td>
+          <td class="mdname" nowrap> <em>tol</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>double(*&nbsp;</td>
+          <td class="mdname" nowrap> <em>f</em>)(std::vector&lt; double &gt;)</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Funkcja liczy metodą powella minimum lokalne. 
+<p>
+Dzięki funkcji maksimum_powell może także liczyć maksimum.     </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Wygenerowano Thu May 27 19:51:30 2004 dla Silnik Genetyczny programem
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

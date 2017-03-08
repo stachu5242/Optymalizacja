@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-2">
+<title>Silnik Genetyczny: macierz.h Source File</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Strona&nbsp;główna</a> | <a class="qindex" href="namespaces.html">Lista przestrzeni nazw</a> | <a class="qindex" href="annotated.html">Lista&nbsp;klas</a> | <a class="qindex" href="files.html">Lista&nbsp;plików</a> | <a class="qindex" href="functions.html">Składowe&nbsp;klas</a> | <a class="qindex" href="globals.html">Składowe&nbsp;plików</a></div>
+<h1>macierz.h</h1><a href="macierz_8h.html">Idź do dokumentacji tego pliku.</a><pre class="fragment"><div>00001 <span class="comment">/*</span>
+00002 <span class="comment">                     Klasa macierzy</span>
+00003 <span class="comment"></span>
+00004 <span class="comment"></span>
+00005 <span class="comment">  Program napisany przez studenta II roku FTiMS Krzysztofa Gintera</span>
+00006 <span class="comment"> </span>
+00007 <span class="comment">*/</span>
+00008 
+00009 
+00010 
+00011 <span class="preprocessor">#ifndef matrix_h</span>
+00012 <span class="preprocessor"></span><span class="preprocessor">#define matrix_h</span>
+00013 <span class="preprocessor"></span><span class="preprocessor">#include"<a class="code" href="slice_8tcc.html">slice.tcc</a>"</span>
+00014 <span class="preprocessor">#include&lt;vector&gt;</span>
+00015 
+<a name="l00017"></a><a class="code" href="classmatrix.html">00017</a> <span class="keyword">class </span><a class="code" href="classmatrix.html">matrix</a>{
+<a name="l00018"></a><a class="code" href="classmatrix.html#r2">00018</a>   std::valarray&lt;double&gt;* <a class="code" href="classmatrix.html#r2">v</a>; 
+<a name="l00019"></a><a class="code" href="classmatrix.html#r1">00019</a>   size_t <a class="code" href="classmatrix.html#r0">d1</a>,<a class="code" href="classmatrix.html#r1">d2</a>; 
+00020  <span class="keyword">public</span>:
+00022   <a class="code" href="classmatrix.html#a22">matrix</a>();
+00024   <a class="code" href="classmatrix.html#a22">matrix</a>(size_t x,size_t y); 
+00026   <a class="code" href="classmatrix.html#a22">matrix</a>(size_t x,size_t y,<span class="keywordtype">double</span> a);
+00028   <a class="code" href="classmatrix.html#a22">matrix</a>(size_t x,size_t y,<span class="keywordtype">int</span> a);
+00030   <a class="code" href="classmatrix.html#a22">matrix</a>(size_t x,size_t y,<span class="keywordtype">float</span> a);
+00032   <a class="code" href="classmatrix.html#a22">matrix</a>(size_t x,size_t y,<span class="keywordtype">long</span> a);
+00034   <a class="code" href="classmatrix.html#a22">matrix</a>(<span class="keyword">const</span> <a class="code" href="classmatrix.html">matrix</a>&amp; a);
+00036   <a class="code" href="classmatrix.html#a69">~matrix</a>();
+00038   <span class="keywordtype">void</span> <a class="code" href="classmatrix.html#a55">resize</a>(size_t  n);
+00040   <span class="keywordtype">void</span> resize(size_t  n,size_t m);
+00042   size_t <a class="code" href="classmatrix.html#a56">size</a>() const; 
+00044   size_t il_kl() const;
+00046   size_t il_wr() const;
+00048   <a class="code" href="classmatrix.html">matrix</a> wr(size_t n); 
+00050   <a class="code" href="classmatrix.html">matrix</a> kl(size_t n);
+00051   std::valarray&lt;<span class="keywordtype">double</span>&gt; wr_val(size_t n);
+00052   std::valarray&lt;<span class="keywordtype">double</span>&gt; kl_val(size_t n);
+00053 
+00055   std::vector&lt;<span class="keywordtype">double</span>&gt; kl_vec(size_t n);
+00057   std::vector&lt;<span class="keywordtype">double</span>&gt; wr_vec(size_t n);
+00058   <span class="comment">//********************************************************************************</span>
+00059 
+00060   <span class="comment">// indeksy [sekcja 2]</span>
+00062 <span class="comment"></span>  <a class="code" href="classSlice__iter.html">Slice_iter</a>&lt;<span class="keywordtype">double</span>&gt; wiersz(size_t a);
+00064   <a class="code" href="classCslice__iter.html">Cslice_iter</a>&lt;<span class="keywordtype">double</span>&gt; wiersz(size_t a) const;
+00066   <a class="code" href="classSlice__iter.html">Slice_iter</a>&lt;<span class="keywordtype">double</span>&gt; kolumna(size_t a);
+00068   <a class="code" href="classCslice__iter.html">Cslice_iter</a>&lt;<span class="keywordtype">double</span>&gt; kolumna(size_t a) const;
+00070   <span class="keywordtype">double</span>&amp; operator() (size_t x, size_t y);
+00072   <span class="keywordtype">double</span> operator() (size_t x, size_t y) const;
+00074   <a class="code" href="classSlice__iter.html">Slice_iter</a>&lt;<span class="keywordtype">double</span>&gt; operator() (size_t i); 
+00076   <a class="code" href="classCslice__iter.html">Cslice_iter</a>&lt;<span class="keywordtype">double</span>&gt; operator() (size_t i) const; 
+00078   <a class="code" href="classSlice__iter.html">Slice_iter</a>&lt;<span class="keywordtype">double</span>&gt; operator[] (size_t i);
+00080   <a class="code" href="classCslice__iter.html">Cslice_iter</a>&lt;<span class="keywordtype">double</span>&gt; operator[] (size_t i) const;
+00081 
+00082   <span class="comment">//*********************************************************************************</span>
+00083 
+00084   <span class="comment">// operacje na calej macierzy [sekcja 3]</span>
+00086 <span class="comment"></span>  <a class="code" href="classmatrix.html">matrix</a>&amp; operator+=(<span class="keywordtype">double</span>);
+00088   <a class="code" href="classmatrix.html">matrix</a>&amp; operator+=(<span class="keywordtype">int</span>);
+00090   <a class="code" href="classmatrix.html">matrix</a>&amp; operator+=(<span class="keywordtype">float</span>);
+00092   <a class="code" href="classmatrix.html">matrix</a>&amp; operator+=(<span class="keywordtype">long</span>);
+00094   <a class="code" href="classmatrix.html">matrix</a>&amp; operator/=(<span class="keywordtype">double</span>);
+00096   <a class="code" href="classmatrix.html">matrix</a>&amp; operator/=(<span class="keywordtype">int</span>);
+00098   <a class="code" href="classmatrix.html">matrix</a>&amp; operator/=(<span class="keywordtype">float</span>);
+00100   <a class="code" href="classmatrix.html">matrix</a>&amp; operator/=(<span class="keywordtype">long</span>);
+00102   <a class="code" href="classmatrix.html">matrix</a>&amp; operator*=(<span class="keywordtype">double</span>);
+00104   <a class="code" href="classmatrix.html">matrix</a>&amp; operator*=(<span class="keywordtype">int</span>);
+00106   <a class="code" href="classmatrix.html">matrix</a>&amp; operator*=(<span class="keywordtype">float</span>);
+00108   <a class="code" href="classmatrix.html">matrix</a>&amp; operator*=(<span class="keywordtype">long</span>);
+00110   <a class="code" href="classmatrix.html">matrix</a>&amp; operator-=(<span class="keywordtype">double</span>);
+00112   <a class="code" href="classmatrix.html">matrix</a>&amp; operator-=(<span class="keywordtype">int</span>);
+00114   <a class="code" href="classmatrix.html">matrix</a>&amp; operator-=(<span class="keywordtype">float</span>);
+00116   <a class="code" href="classmatrix.html">matrix</a>&amp; operator-=(<span class="keywordtype">long</span>);
+00117   <span class="comment">//*********************************************************************************</span>
+00118 
+00119   <span class="comment">//operacje na macierzch [sekcja 4]</span>
+00121 <span class="comment"></span>  <a class="code" href="classmatrix.html">matrix</a>&amp; operator= (const <a class="code" href="classmatrix.html">matrix</a>&amp;);
+00123   matrix&amp; operator+=(const matrix&amp; a);
+00125   matrix&amp; operator-=(const matrix&amp; a);
+00127   matrix&amp; operator*=(const matrix&amp; a);
+00129   <span class="keywordtype">bool</span> operator==(const matrix&amp; a);
+00131   <span class="keywordtype">bool</span> operator!=(const matrix&amp; a);
+00132 
+00133   <span class="comment">//*********************************************************************************</span>
+00134   <span class="comment">//metody dla macierzy</span>
+00136 <span class="comment"></span>  friend std::istream&amp; operator&gt;&gt; (std::istream&amp; s, matrix&amp; a);
+00138   friend std::ostream&amp; operator&lt;&lt; (std::ostream&amp; s, matrix&amp; a);  
+00140   std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; array();
+00142   <span class="keywordtype">double</span> wyzn(size_t n);
+00144   <span class="keywordtype">double</span> wyzn();
+00146   <span class="keywordtype">double</span> slad();
+00148   matrix trans();
+00150   matrix inverse();
+00152   matrix lu(const <span class="keywordtype">char</span> jaka);
+00154   <span class="keywordtype">void</span> balance();
+00156   <span class="keywordtype">void</span> balance_full(<span class="keywordtype">int</span>&amp; low,<span class="keywordtype">int</span>&amp; high,std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; scal);
+00158   <span class="keywordtype">void</span> elmhes_full(<span class="keywordtype">int</span> low,<span class="keywordtype">int</span> high, std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; permu); 
+00160   matrix elmhes();
+00162   <span class="keywordtype">void</span> tridiag();
+00164   <span class="keywordtype">void</span> jacobi(matrix&amp; a,matrix&amp; v,std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; d,<span class="keywordtype">int</span>&amp; rot);
+00166   <span class="keywordtype">void</span> ujacobi(std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; E, matrix&amp; V);
+00168   <span class="keywordtype">void</span> trisym(matrix&amp; z,std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; wlasne);
+00170   <span class="keywordtype">void</span> qr_full(std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; wr,std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; wi);
+00172   <span class="keywordtype">int</span> qr(std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; wr,std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; wi);
+00174   <span class="keywordtype">int</span> new_qr(std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; wr,std::valarray&lt;<span class="keywordtype">double</span>&gt;&amp; wi,<span class="keywordtype">int</span> low,<span class="keywordtype">int</span> high);
+00176   <span class="keywordtype">void</span> blad(const <span class="keywordtype">char</span>* blad);
+00178   friend matrix mnor(matrix&amp; s, size_t dlx, size_t dly, size_t pox, size_t poy);
+00180   friend matrix operator-(const matrix s,<span class="keywordtype">int</span> jednos);
+00182   friend matrix operator+(const matrix s,<span class="keywordtype">int</span> jednos);
+00184   friend matrix operator*(const matrix a,const matrix b);
+00186   friend matrix operator*(<span class="keywordtype">double</span> a,matrix b);
+00188   friend matrix operator-(const matrix a,const matrix b);
+00190   friend matrix operator+(const matrix a,const matrix b);
+00191   <span class="comment">// Makra wykorzystwane przez rozne funkcje</span>
+<a name="l00193"></a><a class="code" href="classmatrix.html#n12">00193</a> <span class="comment"></span>  friend <span class="keywordtype">void</span> SWAP(<span class="keywordtype">double</span>&amp; a,<span class="keywordtype">double</span>&amp; b)
+00194     { <span class="keywordtype">double</span> temp; temp = a; a = b; b = temp; };
+<a name="l00196"></a><a class="code" href="classmatrix.html#n11">00196</a>   <span class="keyword">friend</span> <span class="keywordtype">double</span> <a class="code" href="classmatrix.html#n11">SIGN</a>(<span class="keywordtype">double</span> a,<span class="keywordtype">double</span> b)
+00197    {<span class="keywordflow">return</span> ((b&gt;=0)? fabs(a): -fabs(a)); };
+<a name="l00199"></a><a class="code" href="classmatrix.html#n0">00199</a>   <span class="keyword">friend</span> <span class="keywordtype">int</span> <a class="code" href="classmatrix.html#n0">IMAX</a>(<span class="keywordtype">int</span> a,<span class="keywordtype">int</span> b)
+00200    {<span class="keywordflow">return</span> ((a&gt;=b)? a : b);};
+00201   <span class="comment">//Funkcja zwracajaca minimum dla dwuch zmiennych naturalnych</span>
+<a name="l00202"></a><a class="code" href="classmatrix.html#n1">00202</a>   <span class="keyword">friend</span> <span class="keywordtype">int</span> <a class="code" href="globals_8h.html#a0">MIN</a>(<span class="keywordtype">int</span> a,<span class="keywordtype">int</span> b)
+00203     {<span class="keywordflow">return</span> ((a&gt;=b)? b: a);};
+00204 };
+00205 
+00206 <span class="preprocessor">#endif</span>
+</div></pre><hr size="1"><address style="align: right;"><small>Wygenerowano Thu May 27 19:51:28 2004 dla Silnik Genetyczny programem
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

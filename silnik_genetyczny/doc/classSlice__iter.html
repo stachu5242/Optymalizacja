@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-2">
+<title>Silnik Genetyczny:  TemplateSlice_iter&lt; T &gt; class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Strona&nbsp;główna</a> | <a class="qindex" href="namespaces.html">Lista przestrzeni nazw</a> | <a class="qindex" href="annotated.html">Lista&nbsp;klas</a> | <a class="qindex" href="files.html">Lista&nbsp;plików</a> | <a class="qindex" href="functions.html">Składowe&nbsp;klas</a> | <a class="qindex" href="globals.html">Składowe&nbsp;plików</a></div>
+<h1>Dokumentacja szablonu klasy Slice_iter&lt; T &gt;</h1>Klsa iteratora dla macierzy.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="slice_8h-source.html">slice.h</a>&gt;</code>
+<p>
+Diagram współpracy dla Slice_iter&lt; T &gt;:<p><center><img src="classSlice__iter__coll__graph.jpg" border="0" usemap="#Slice__iter_3_01T_01_4__coll__map" alt="Collaboration graph"></center>
+<center><font size="2">[<a href="graph_legend.html">legenda</a>]</font></center><a href="classSlice__iter-members.html">Lista wszystkich składowych.</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSlice__iter.html">Slice_iter</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#a0">end</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">koniec macierzy  <a href="#a0"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>T &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#a1">operator *</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">wskazanie  <a href="#a1"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>T &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#a2">operator()</a> (size_t i)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indeksy  <a href="#a2"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSlice__iter.html">Slice_iter</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#a3">operator++</a> (int)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przesun pole o kilka  <a href="#a3"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSlice__iter.html">Slice_iter</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#a4">operator++</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przesun pole o 1  <a href="#a4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>T &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#a5">operator[]</a> (size_t i)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indeksy  <a href="#a5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#a6">Slice_iter</a> (std::valarray&lt; T &gt; *vv, std::slice ss)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">konstruktor domyslny  <a href="#a6"></a><br><br></td></tr>
+<tr><td colspan=2><br><h2>Metody prywatne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>T &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#d0">ref</a> (size_t i) const</td></tr>
+
+<tr><td colspan=2><br><h2>Atrybuty prywatne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>size_t&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#r0">curr</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::slice&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#r1">s</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::valarray&lt; T &gt; *&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSlice__iter.html#r2">v</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+<h3>template&lt;class T&gt;<br>
+ class Slice_iter&lt; T &gt;</h3>
+
+Klsa iteratora dla macierzy. 
+<p>
+<hr><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" name="a6" doxytag="Slice_iter::Slice_iter" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::<a class="el" href="classSlice__iter.html">Slice_iter</a>           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::valarray&lt; T &gt; *&nbsp;</td>
+          <td class="mdname" nowrap> <em>vv</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>std::slice&nbsp;</td>
+          <td class="mdname" nowrap> <em>ss</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+konstruktor domyslny 
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="a0" doxytag="Slice_iter::end" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt; <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::end           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+koniec macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a1" doxytag="Slice_iter::operator *" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> T &amp; <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::operator *           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+wskazanie 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="Slice_iter::operator()" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> T &amp; <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>i</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+indeksy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="Slice_iter::operator++" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt; <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::operator++           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przesun pole o kilka 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="Slice_iter::operator++" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt; &amp; <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::operator++           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przesun pole o 1 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="Slice_iter::operator[]" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> T &amp; <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::operator[]           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>i</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+indeksy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="d0" doxytag="Slice_iter::ref" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> T &amp; <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::ref           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>i</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline, private]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" name="r0" doxytag="Slice_iter::curr" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> size_t <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::<a class="el" href="classSlice__iter.html#r0">curr</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r1" doxytag="Slice_iter::s" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> std::slice <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::<a class="el" href="classSlice__iter.html#r1">s</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r2" doxytag="Slice_iter::v" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" colspan="4">
+template&lt;class T&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top"> std::valarray&lt;T&gt;* <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; T &gt;::<a class="el" href="classSlice__iter.html#r2">v</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="slice_8h-source.html">slice.h</a><li><a class="el" href="slice_8tcc.html">slice.tcc</a></ul>
+<hr size="1"><address style="align: right;"><small>Wygenerowano Thu May 27 19:51:31 2004 dla Silnik Genetyczny programem
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

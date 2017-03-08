@@ -1,0 +1,515 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-2">
+<title>Silnik Genetyczny: macierz.cpp File Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Strona&nbsp;główna</a> | <a class="qindex" href="namespaces.html">Lista przestrzeni nazw</a> | <a class="qindex" href="annotated.html">Lista&nbsp;klas</a> | <a class="qindex" href="files.html">Lista&nbsp;plików</a> | <a class="qindex" href="functions.html">Składowe&nbsp;klas</a> | <a class="qindex" href="globals.html">Składowe&nbsp;plików</a></div>
+<h1>Dokumentacja pliku macierz.cpp</h1><code>#include "<a class="el" href="macierz_8h-source.html">macierz.h</a>"</code><br>
+<code>#include &lt;cmath&gt;</code><br>
+<code>#include &lt;iostream&gt;</code><br>
+
+<p>
+Wykres zależności załączania dla macierz.cpp:<p><center><img src="macierz_8cpp__incl.jpg" border="0" usemap="#macierz.cpp_map" alt="Include dependency graph"></center>
+<map name="macierz.cpp_map">
+<area href="macierz_8h.html" shape="rect" coords="40,242,107,266" alt="">
+<area href="slice_8tcc.html" shape="rect" coords="8,168,64,191" alt="">
+<area href="slice_8h.html" shape="rect" coords="13,93,59,117" alt="">
+</map>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Definicje</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a3">MACH_EPS</a>&nbsp;&nbsp;&nbsp;1e-16</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a0">MAXIT</a>&nbsp;&nbsp;&nbsp;30</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a2">ONE</a>&nbsp;&nbsp;&nbsp;1.0</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a1">ZERO</a>&nbsp;&nbsp;&nbsp;0.0</td></tr>
+
+<tr><td colspan=2><br><h2>Funkcje</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a12">mnor</a> (<a class="el" href="classmatrix.html">matrix</a> &amp;s, size_t dlx, size_t dly, size_t pox, size_t poy)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a7">operator *</a> (double a, <a class="el" href="classmatrix.html">matrix</a> b)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a6">operator *</a> (const <a class="el" href="classmatrix.html">matrix</a> a, const <a class="el" href="classmatrix.html">matrix</a> b)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a10">operator+</a> (const <a class="el" href="classmatrix.html">matrix</a> s, int jednos)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a4">operator+</a> (const <a class="el" href="classmatrix.html">matrix</a> a, const <a class="el" href="classmatrix.html">matrix</a> b)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a11">operator-</a> (const <a class="el" href="classmatrix.html">matrix</a> s, int jednos)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a5">operator-</a> (const <a class="el" href="classmatrix.html">matrix</a> a, const <a class="el" href="classmatrix.html">matrix</a> b)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>ostream &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a8">operator&lt;&lt;</a> (ostream &amp;s, <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>istream &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="macierz_8cpp.html#a9">operator&gt;&gt;</a> (istream &amp;s, <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+</table>
+<hr><h2>Dokumentacja definicji</h2>
+<a class="anchor" name="a3" doxytag="macierz.cpp::MACH_EPS" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define MACH_EPS&nbsp;&nbsp;&nbsp;1e-16          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a0" doxytag="macierz.cpp::MAXIT" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define MAXIT&nbsp;&nbsp;&nbsp;30          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="macierz.cpp::ONE" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define ONE&nbsp;&nbsp;&nbsp;1.0          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a1" doxytag="macierz.cpp::ZERO" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> #define ZERO&nbsp;&nbsp;&nbsp;0.0          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentacja funkcji</h2>
+<a class="anchor" name="a12" doxytag="macierz.cpp::mnor" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> mnor           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>dlx</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>dly</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>pox</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>poy</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+====================================================================* <br>
+ mnor zwraca wycinek macierzy <br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ s matrix s; czyli macierz wywolywana <br>
+ dlx size_t dlx dlugosc x <br>
+ dly size_t dly dlugosc y <br>
+ pox size_t pox dolny zakres x <br>
+ poy size_t poy dolny zakres y <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ Zwraca wybrany minor <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="macierz.cpp::operator *" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator *           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="macierz.cpp::operator *" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator *           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a10" doxytag="macierz.cpp::operator+" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator+           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>jednos</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="macierz.cpp::operator+" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator+           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="macierz.cpp::operator-" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator-           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>jednos</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="macierz.cpp::operator-" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator-           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="macierz.cpp::operator<<" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> ostream&amp; operator&lt;&lt;           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::ostream &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="macierz.cpp::operator>>" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> istream&amp; operator&gt;&gt;           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::istream &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Wygenerowano Thu May 27 19:51:30 2004 dla Silnik Genetyczny programem
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

@@ -1,0 +1,9 @@
+base referer
+rect $globals_8h.html 42,168 104,191
+rect $linmin_8h.html 157,242 210,266
+rect $slice_8h.html 343,93 389,117
+rect $macierz_8h.html 267,242 334,266
+rect $funkcja_8h.html 379,242 441,266
+rect $brent_8h.html 128,168 176,191
+rect $mnbark_8h.html 200,168 263,191
+rect $slice_8tcc.html 338,168 394,191

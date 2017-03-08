@@ -1,0 +1,111 @@
+**********************
+*   Opis programu:   *
+**********************
+
+Program ma na celu szukanie optimum (warto¶ci najwiêkszej, b±d¼ 
+najmniejszej) dla zadanej funkcji ci±g³ej metod± hybrydow± (po³±czenie
+metody genetycznej z metod± powella).
+
+Prawie wszystkie opcje które mog± zainteresowaæ u¿ytkownika umieszczone s±
+w pliku INPUT. Nazwê pliku wej¶ciowego mo¿emy dowolnie zmieniaæ podczas
+inicjalizacji zagadnienia w pliku main.cpp. Dla przyk³adu
+
+zagadnienie_class problem("plik_wej¶ciowy.txt");
+problem.ewolucja();
+
+rozwi±zuje zadany problem. Nale¿y pamiêtaæ aby za ka¿d± zmian± kodu ¼ród³owego
+przekompilowaæ program (polecenie make - przygotowany jest plik Makefile).
+
+Nie trzeba kompilowaæ na nowo podczas zmian pliku wej¶ciowego (INPUT).
+Po kompilacji powstanie program o nazwie genetic
+
+Funkcja:
+========
+
+Funkcjê wpisujemy w pliku funkcja.cpp. Dziêki informacj± z pliku INPUT
+program sam bêdzie wiedzia³ ile jest zmiennych tak¿e u¿ytkownik nie musi 
+martwiæ siê o liczbê zmiennych naszej funkcji. Je¶li dla przyk³adu mamy 
+funkcjê "n" zmiennych naszymi zmiennymi bêd±:
+
+zmienna[0], zmienna[1], ...,  zmienna[n-1];
+
+w pliku funkcja.cpp znajduj± siê przyk³adowe funkcje testuj±ce. Mo¿na tam 
+dostrzec nastêpuj±c± sztuczkê:
+
+double x = zmienna[0];
+double y = zmienna[1];
+double z = zmienna[2];
+
+wynik = x * y * z;
+
+ten styl pisania znacznie poprawia czytelno¶æ funkcji. 
+Nale¿y pamiêtaæ ¿e korzystamy z cmath i wszystkie funkcje jakie mo¿emy u¿yæ
+u¿ywa siê dok³adnie tak jak w przypadku biblioteki math z jêzyka C.
+Dla przyk³adu potêgowanie to:  pow(x, y) (w Fortranie x**y).
+
+Dziedzina funkcji:
+==================
+
+Mo¿na zauwa¿yæ, ¿e po¶ród plików znajduje siê tak¿e plik dziedzina.cpp.
+Jest to plik w którym definiuje siê dziedzinê zagadnienia. Je¶li zagadnienie 
+posiada jakie¶ punkty w których dzia³anie nie jest mo¿liwe (mimo ¿e zakres 
+zmiennych na to pozwala) dla przyk³adu dzielenie przez zero, to mo¿emy wykluczyæ
+dany punkt z dziedziny... w ten sposób program robi siê ogólniejszy i nie 
+wykona ¿adnych b³êdów podczas operacji (chyba ¿e z winy u¿ytkownika).
+Generalnie funkcja musi zwracaæ true je¶li punkt nale¿y do dziedziny, 
+lub false je¶li nie nale¿y do dziedziny.
+Jak na razie na tego typu b³êdy przystosowany jest jedynie algorytm genetyczny.
+Metoda Powella nie do koñca z tym dzia³a.
+
+
+
+
+**********************************************
+*   Format pliku wej¶ciowego:                *
+**********************************************
+
+Format pliku wej¶ciowego starali¶my siê opisaæ w samym pliku wej¶ciowym.
+Nale¿y pamiêtaæ ¿e komentarz w pliku zaczyna siê od '#' do koñca linii.
+
+
+***********************
+*   Metoda Powella    *
+***********************
+
+Z naszych obserwacji wynika, ¿e metoda Powella nie zawsze daje poprawiony
+rezultat. Je¶li wynik przy pomocy powella jest "dziwny" (le¿y poza obszarem
+poszukiwañ, lub daje nie poprawny wynik, radzimy wy³±czyæ opcjê metody
+Powella w pliku wej¶ciowym INPUT, oraz przeliczyæ metod± genetyczn±
+wiêksz± liczbê generacji (pokoleñ), co tak¿e ustawia siê w pliku INPUT
+
+
+
+**********************************
+*   Prawdopodobieñstwo mutacji   *
+**********************************
+
+Z prawdopodobieñstwem mutacji nie powinno siê raczej "bawiæ" jednak je¶li
+ma siê na to ochotê to mo¿na... ale tylko w kodzie ¼ród³owym.
+¦ci¶lej rzecz ujmuj±c w pliku GAzagadnienie.cpp na samym koñcu konstruktora
+klasy zagadnienie_class.
+
+
+***************************
+*   Dok³adno¶æ obliczeñ   *
+***************************
+	
+Je¶li chodzi o dok³adno¶æ obliczeñ to dok³adno¶æ podawana w pliku INPUT
+jest dok³adno¶ci± s³u¿±c± do utworzenia osobnika o odpowiednim rozmiarze.
+Je¶li u¿ywamy metody Powella wynik bêdzie o wiele bardziej dok³adny, je¶li 
+jednak nie to wynik bêdzie otrzymany z dok³adno¶ci± do zadanej liczby, oraz
+zalecane jest poszukaæ lokalnego minimum (maksimum) innymi metodami startuj±c
+od podanej warto¶ci.
+
+
+***********
+*   API   *
+***********
+
+Tak zwane API czyli Aplication Programmers Interface (Interfers Programisty)
+znajduje siê w katalogu doc. Jest on wygenerowany przez program doxygen w 
+postaci strony html (zaczynaæ ogl±danie od pliku index.html)

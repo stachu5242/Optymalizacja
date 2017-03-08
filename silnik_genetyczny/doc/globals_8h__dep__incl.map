@@ -1,0 +1,7 @@
+base referer
+rect $GAzagadnienie_8cpp.html 7,93 135,117
+rect $brent_8cpp.html 159,93 223,117
+rect $linmin_8h.html 246,93 300,117
+rect $linmin_8cpp.html 208,18 277,42
+rect $powell_8cpp.html 301,18 373,42
+rect $mnbark_8cpp.html 374,93 454,117

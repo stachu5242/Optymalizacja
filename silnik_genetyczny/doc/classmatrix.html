@@ -1,0 +1,3416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-2">
+<title>Silnik Genetyczny: matrix class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Wygenerowano przez Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Strona&nbsp;główna</a> | <a class="qindex" href="namespaces.html">Lista przestrzeni nazw</a> | <a class="qindex" href="annotated.html">Lista&nbsp;klas</a> | <a class="qindex" href="files.html">Lista&nbsp;plików</a> | <a class="qindex" href="functions.html">Składowe&nbsp;klas</a> | <a class="qindex" href="globals.html">Składowe&nbsp;plików</a></div>
+<h1>Dokumentacja klasy matrix</h1>Klasa macierzy 2-wymiarowych.  
+<a href="#_details">Więcej...</a>
+<p>
+<code>#include &lt;<a class="el" href="macierz_8h-source.html">macierz.h</a>&gt;</code>
+<p>
+Diagram współpracy dla matrix:<p><center><img src="classmatrix__coll__graph.jpg" border="0" usemap="#matrix__coll__map" alt="Collaboration graph"></center>
+<center><font size="2">[<a href="graph_legend.html">legenda</a>]</font></center><a href="classmatrix-members.html">Lista wszystkich składowych.</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::valarray&lt; double &gt; &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a0">array</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca dane z macierzy w formie tablicy  <a href="#a0"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a1">balance</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja ustawiajaca macierz w najlepszej pozycji do algorytmu qr  <a href="#a1"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a2">balance_full</a> (int &amp;low, int &amp;high, std::valarray&lt; double &gt; &amp;scal)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja ustawiajaca macierz w najlepszej pozycji do algorytmu qr efektywniejsza dla duzych macierzy  <a href="#a2"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a3">blad</a> (const char *blad)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja obclugujaca bledy  <a href="#a3"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a4">elmhes</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja redukujaca macierz do macierzy gornej hasenberga wersja prosta  <a href="#a4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a5">elmhes_full</a> (int low, int high, std::valarray&lt; double &gt; &amp;permu)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Bardziej rozbudowana wersja redukcji do macierzy Hassenberga wykorzystje lepszy balance.  <a href="#a5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>size_t&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a6">il_kl</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca ilosc kolumn  <a href="#a6"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>size_t&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a7">il_wr</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca ilosc wierszy  <a href="#a7"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a8">inverse</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja odwracajaca macierz  <a href="#a8"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a9">jacobi</a> (<a class="el" href="classmatrix.html">matrix</a> &amp;a, <a class="el" href="classmatrix.html">matrix</a> &amp;<a class="el" href="classmatrix.html#r2">v</a>, std::valarray&lt; double &gt; &amp;d, int &amp;rot)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Funkcja liczac wartosci wlasne metoda Jacobiego.  <a href="#a9"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a10">kl</a> (size_t n)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca odpowiednia kolumne  <a href="#a10"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::valarray&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a11">kl_val</a> (size_t n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::vector&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a12">kl_vec</a> (size_t n)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">zwraca kolumne przerobiona na wektor  <a href="#a12"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classCslice__iter.html">Cslice_iter</a>&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a13">kolumna</a> (size_t a) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funcja zwracajaca wycinek odpowiedni staly macierzy  <a href="#a13"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a14">kolumna</a> (size_t a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funcja zwracajaca wycinek odpowiedni macierzy  <a href="#a14"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a15">lu</a> (const char jaka)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">rozklada lu macierzy  <a href="#a15"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a16">matrix</a> (const <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">konstruktor kopiujacy  <a href="#a16"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a17">matrix</a> (size_t x, size_t y, long a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">konstruktor wpisujacy w kazde pole wartosc a  <a href="#a17"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a18">matrix</a> (size_t x, size_t y, float a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">konstruktor wpisujacy w kazde pole wartosc a  <a href="#a18"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a19">matrix</a> (size_t x, size_t y, int a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">konstruktor wpisujacy w kazde pole wartosc a  <a href="#a19"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a20">matrix</a> (size_t x, size_t y, double a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">konstruktor wpisujacy w kazde pole wartosc a  <a href="#a20"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a21">matrix</a> (size_t x, size_t y)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">konstruktor domyslny  <a href="#a21"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a22">matrix</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">konstruktor domyslny  <a href="#a22"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a23">new_qr</a> (std::valarray&lt; double &gt; &amp;wr, std::valarray&lt; double &gt; &amp;wi, int low, int high)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja liczaca wartosci wlasne metoda qr dla macierzy Hessenberga  <a href="#a23"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a24">operator *=</a> (const <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">iloczyn 2 macierzy podstawiana pod pierwsza z nich  <a href="#a24"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a25">operator *=</a> (long)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone mnozenie do kazdego elementu macierzy  <a href="#a25"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a26">operator *=</a> (float)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone mnoozenie do kazdego elementu macierzy  <a href="#a26"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a27">operator *=</a> (int)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone mnozenie do kazdego elementu macierzy  <a href="#a27"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a28">operator *=</a> (double)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone mnozenie do kazdego elementu macierzy  <a href="#a28"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>bool&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a29">operator!=</a> (const <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator nierownosci  <a href="#a29"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classCslice__iter.html">Cslice_iter</a>&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a30">operator()</a> (size_t i) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator pojedynczy dla stalych  <a href="#a30"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a31">operator()</a> (size_t i)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator pojedynczy  <a href="#a31"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a32">operator()</a> (size_t x, size_t y) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator na ksztalt fortranowego dla stalych  <a href="#a32"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a33">operator()</a> (size_t x, size_t y)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator na ksztalt fortranowego  <a href="#a33"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a34">operator+=</a> (const <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">suma 2 macierzy podstawiana pod pierwsza z nich  <a href="#a34"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a35">operator+=</a> (long)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone dodawanie do kazdego elementu macierzy  <a href="#a35"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a36">operator+=</a> (float)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone dodawanie do kazdego elementu macierzy  <a href="#a36"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a37">operator+=</a> (int)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone dodawanie do kazdego elementu macierzy  <a href="#a37"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a38">operator+=</a> (double)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone dodawanie do kazdego elementu macierzy  <a href="#a38"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a39">operator-=</a> (const <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">roznica 2 macierzy podstawiana pod pierwsza z nich  <a href="#a39"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a40">operator-=</a> (long)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone odejmowanie do kazdego elementu macierzy  <a href="#a40"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a41">operator-=</a> (float)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone odejmowanie do kazdego elementu macierzy  <a href="#a41"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a42">operator-=</a> (int)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone odejmowanie do kazdego elementu macierzy  <a href="#a42"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a43">operator-=</a> (double)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone odejmowanie do kazdego elementu macierzy  <a href="#a43"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a44">operator/=</a> (long)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone dzielenie do kazdego elementu macierzy  <a href="#a44"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a45">operator/=</a> (float)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone dzielenie do kazdego elementu macierzy  <a href="#a45"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a46">operator/=</a> (int)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone dzielenie do kazdego elementu macierzy  <a href="#a46"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a47">operator/=</a> (double)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">przeciarzone dzielenie do kazdego elementu macierzy  <a href="#a47"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a48">operator=</a> (const <a class="el" href="classmatrix.html">matrix</a> &amp;)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator przypisania  <a href="#a48"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>bool&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a49">operator==</a> (const <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator rownosc  <a href="#a49"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classCslice__iter.html">Cslice_iter</a>&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a50">operator[]</a> (size_t i) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator pojedynczy dla stalych jak w c  <a href="#a50"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a51">operator[]</a> (size_t i)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator pojedynczy jak w c  <a href="#a51"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a52">qr</a> (std::valarray&lt; double &gt; &amp;wr, std::valarray&lt; double &gt; &amp;wi)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja liczaca wartosci wlasne metoda qr dla macierzy Hessenberga  <a href="#a52"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a53">qr_full</a> (std::valarray&lt; double &gt; &amp;wr, std::valarray&lt; double &gt; &amp;wi)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja liczaca wartosci wlasne dowolnej macierzy  <a href="#a53"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a54">resize</a> (size_t n, size_t m)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zmieniajaca wielkosc macierzy o wym n na m  <a href="#a54"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a55">resize</a> (size_t n)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zmieniajaca wielkosc macierzy (tworzy kwadratowa o wym n)  <a href="#a55"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>size_t&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a56">size</a> () const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca rozmiar macierzy  <a href="#a56"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a57">slad</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja liczaca slad dla macierzy  <a href="#a57"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a58">trans</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja transponujaca macierz  <a href="#a58"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a59">tridiag</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">trojdiagonalizacja macierzy symetrycznej  <a href="#a59"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a60">trisym</a> (<a class="el" href="classmatrix.html">matrix</a> &amp;z, std::valarray&lt; double &gt; &amp;wlasne)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja liczaca wartosci wlasne macierzy trojdiagonalnej symetrycznej  <a href="#a60"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a61">ujacobi</a> (std::valarray&lt; double &gt; &amp;E, <a class="el" href="classmatrix.html">matrix</a> &amp;V)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja liczaca wartosci wlasne macierzy symetrycznej  <a href="#a61"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classCslice__iter.html">Cslice_iter</a>&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a62">wiersz</a> (size_t a) const</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funcja zwracajaca wycinek odpowiedni staly macierzy  <a href="#a62"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a63">wiersz</a> (size_t a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funcja zwracajaca wycinek odpowiedni macierzy  <a href="#a63"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a64">wr</a> (size_t n)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca odpowiedni wiersz  <a href="#a64"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::valarray&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a65">wr_val</a> (size_t n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::vector&lt; double &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a66">wr_vec</a> (size_t n)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">zwraca wiersz przerobiony na wektor  <a href="#a66"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a67">wyzn</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja liczaca wyznacznik  <a href="#a67"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a68">wyzn</a> (size_t n)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja liczaca wyznacznik dla wycinka macierzy  <a href="#a68"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#a69">~matrix</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destruktor  <a href="#a69"></a><br><br></td></tr>
+<tr><td colspan=2><br><h2>Atrybuty prywatne</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>size_t&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#r0">d1</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>size_t&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#r1">d2</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">rozmiar macierzy  <a href="#r1"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::valarray&lt; double &gt; *&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#r2">v</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">moj kontener dla macierzy  <a href="#r2"></a><br><br></td></tr>
+<tr><td colspan=2><br><h2>Przyjaciele</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n0">IMAX</a> (int a, int b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca wartosc maksymalna dla dwuch zmiennych naturalnych  <a href="#n0"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n1">MIN</a> (int a, int b)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n2">mnor</a> (<a class="el" href="classmatrix.html">matrix</a> &amp;s, size_t dlx, size_t dly, size_t pox, size_t poy)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca wycinek macierzy  <a href="#n2"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n3">operator *</a> (double a, <a class="el" href="classmatrix.html">matrix</a> b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator mnozenia dla liczby i macierzy  <a href="#n3"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n4">operator *</a> (const <a class="el" href="classmatrix.html">matrix</a> a, const <a class="el" href="classmatrix.html">matrix</a> b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator mnozenia dla 2 macierzy  <a href="#n4"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n5">operator+</a> (const <a class="el" href="classmatrix.html">matrix</a> a, const <a class="el" href="classmatrix.html">matrix</a> b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator dodawania dla 2 macierzy  <a href="#n5"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n6">operator+</a> (const <a class="el" href="classmatrix.html">matrix</a> s, int jednos)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator dodawania od macierzy macierzy jednostkowej  <a href="#n6"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n7">operator-</a> (const <a class="el" href="classmatrix.html">matrix</a> a, const <a class="el" href="classmatrix.html">matrix</a> b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator odejmowania dla 2 macierzy  <a href="#n7"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n8">operator-</a> (const <a class="el" href="classmatrix.html">matrix</a> s, int jednos)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">operator odejmowania od macierzy macierzy jednostkowej  <a href="#n8"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::ostream &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n9">operator&lt;&lt;</a> (std::ostream &amp;s, <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja wypisujaca macierz do strumienia  <a href="#n9"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::istream &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n10">operator&gt;&gt;</a> (std::istream &amp;s, <a class="el" href="classmatrix.html">matrix</a> &amp;a)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja wczytujaca macierz ze strumienia  <a href="#n10"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>double&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n11">SIGN</a> (double a, double b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zwracajaca odpowiednia wartosc bezwzgledna zalezna od znaku zmiennej b  <a href="#n11"></a><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classmatrix.html#n12">SWAP</a> (double &amp;a, double &amp;b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">funkcja zamiany 2 argumentow  <a href="#n12"></a><br><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Opis szczegółowy</h2>
+Klasa macierzy 2-wymiarowych. 
+<p>
+<hr><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" name="a22" doxytag="matrix::matrix" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> matrix::matrix           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+konstruktor domyslny 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a21" doxytag="matrix::matrix" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> matrix::matrix           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+konstruktor domyslny 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a20" doxytag="matrix::matrix" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> matrix::matrix           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>double&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+konstruktor wpisujacy w kazde pole wartosc a 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a19" doxytag="matrix::matrix" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> matrix::matrix           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+konstruktor wpisujacy w kazde pole wartosc a 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a18" doxytag="matrix::matrix" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> matrix::matrix           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>float&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+konstruktor wpisujacy w kazde pole wartosc a 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a17" doxytag="matrix::matrix" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> matrix::matrix           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>long&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+konstruktor wpisujacy w kazde pole wartosc a 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a16" doxytag="matrix::matrix" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> matrix::matrix           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+konstruktor kopiujacy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a69" doxytag="matrix::~matrix" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> matrix::~<a class="el" href="classmatrix.html">matrix</a>           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+destruktor 
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" name="a0" doxytag="matrix::array" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> valarray&lt; double &gt; &amp; matrix::array           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca dane z macierzy w formie tablicy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a1" doxytag="matrix::balance" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::balance           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja ustawiajaca macierz w najlepszej pozycji do algorytmu qr 
+<p>
+====================================================================* <br>
+ balance przerabia macierz na macierz zbalansowaa <br>
+<br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ a matrix a; <br>
+ macierz zbalansowana <br>
+ ====================================================================<br>
+ <br>
+ funkcje: SWAP <br>
+ ======= <br>
+ <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="matrix::balance_full" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::balance_full           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>high</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>scal</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja ustawiajaca macierz w najlepszej pozycji do algorytmu qr efektywniejsza dla duzych macierzy 
+<p>
+====================================================================* <br>
+ balance przerabia macierz na macierz zbalansowaa <br>
+<br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ a matrix a; <br>
+ macierz zbalansowana <br>
+ low int low <br>
+ indeks pierwszej kolumny niezerowej <br>
+ high int high <br>
+ indeks ostaniej niezerowej kolumny <br>
+ scal wektor zmian <br>
+ ====================================================================<br>
+ <br>
+ funkcje: SWAP <br>
+ ======= <br>
+ <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="matrix::blad" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::blad           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>blad</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja obclugujaca bledy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="matrix::elmhes" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> matrix::elmhes           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja redukujaca macierz do macierzy gornej hasenberga wersja prosta 
+<p>
+====================================================================* <br>
+ elmhes przerabia macierz na gorna macierz Hassenberga <br>
+<br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ a matrix a; <br>
+ gorna macierz Hassenberga bez dodatkowych inform. <br>
+ ====================================================================<br>
+ <br>
+ funkcje: SWAP <br>
+ ======= <br>
+ <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="matrix::elmhes_full" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::elmhes_full           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>high</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>perm</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Bardziej rozbudowana wersja redukcji do macierzy Hassenberga wykorzystje lepszy balance. 
+<p>
+====================================================================*<p>
+elmhes_full przerabia macierz na gorna macierz Hassenberga <br>
+<br>
+<p>
+====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ low int low; <br>
+ high int high; spojrz na balance <br>
+ mat matrix mat; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ mat matrix mat; <br>
+ gorna macierz Hassenberga dodatkowe informacje <br>
+ o zamiana zachowane sa w jej dolnym trojkacie <br>
+ perm int perm[]; <br>
+ wektor permutacji dla elmtrans <br>
+ <br>
+ ====================================================================<br>
+ <br>
+ funkcje: SWAP <br>
+ ======= <br>
+ <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="matrix::il_kl" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> size_t matrix::il_kl           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca ilosc kolumn 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="matrix::il_wr" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> size_t matrix::il_wr           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca ilosc wierszy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="matrix::inverse" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> matrix::inverse           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja odwracajaca macierz 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="matrix::jacobi" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::jacobi           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>rot</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Funkcja liczac wartosci wlasne metoda Jacobiego. 
+<p>
+====================================================================* <br>
+ jacobi znajduje wartosci wlasne oraz wektory wlasne <br>
+<br>
+ macierzy kwadratowej symetrycznej <br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ V matrix V <br>
+ macierz z wektorami wlasnymi <br>
+ E wektor wartosci wlasnych <br>
+<br>
+ rot int rot <br>
+ liczba rotacji <br>
+ ====================================================================<br>
+ <br>
+ funkcje: ??????? <br>
+ ======= <br>
+ <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a10" doxytag="matrix::kl" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> matrix::kl           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca odpowiednia kolumne 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a11" doxytag="matrix::kl_val" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> valarray&lt; double &gt; matrix::kl_val           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a12" doxytag="matrix::kl_vec" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt; double &gt; matrix::kl_vec           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+zwraca kolumne przerobiona na wektor 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a13" doxytag="matrix::kolumna" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classCslice__iter.html">Cslice_iter</a>&lt; double &gt; matrix::kolumna           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funcja zwracajaca wycinek odpowiedni staly macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a14" doxytag="matrix::kolumna" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; double &gt; matrix::kolumna           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funcja zwracajaca wycinek odpowiedni macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a15" doxytag="matrix::lu" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> matrix::lu           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const char&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>jaka</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+rozklada lu macierzy 
+<p>
+====================================================================* <br>
+ lu funkcja dokonuje rozkladu lu <br>
+ <hr>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ jaka char jaka <br>
+ znak macierzy do zwrucenia "l" lub "u" <br>
+ <hr>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ l/u matrix l/u <br>
+ macierze rozkladu <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a23" doxytag="matrix::new_qr" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> int matrix::new_qr           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>wr</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>wi</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>high</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja liczaca wartosci wlasne metoda qr dla macierzy Hessenberga 
+<p>
+====================================================================* <br>
+ new_qr wylicza wartosci wlasne dla dowolnej macierzy HESS... <br>
+<br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ low,high wyniki przestawien w balance_full <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ a matrix a; <br>
+ gorna macierz Hassenberga bez dodatkowych inform. <br>
+ wr wektor czesci rzeczywistych wartosci wlasnych <br>
+<br>
+ wi wektor czesci urojonych wartosci wlasnych <br>
+ ====================================================================<br>
+ <br>
+ funkcje: <br>
+ ======= <br>
+ <br>
+ zdefinoiwane stale: <br>
+ =================== <br>
+ MACH_EPS dokladnosc dla danej maszyny <br>
+ ZERO == 0.0 <br>
+ ONE == 1.0 <br>
+ <hr>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a24" doxytag="matrix::operator *=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a>&amp; matrix::operator *=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+iloczyn 2 macierzy podstawiana pod pierwsza z nich 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a25" doxytag="matrix::operator *=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator *=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">long&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone mnozenie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a26" doxytag="matrix::operator *=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator *=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone mnoozenie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a27" doxytag="matrix::operator *=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator *=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone mnozenie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a28" doxytag="matrix::operator *=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator *=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone mnozenie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a29" doxytag="matrix::operator!=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> bool matrix::operator!=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator nierownosci 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a30" doxytag="matrix::operator()" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classCslice__iter.html">Cslice_iter</a>&lt; double &gt; matrix::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>i</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator pojedynczy dla stalych 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a31" doxytag="matrix::operator()" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; double &gt; matrix::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>i</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator pojedynczy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a32" doxytag="matrix::operator()" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double matrix::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"> const</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator na ksztalt fortranowego dla stalych 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a33" doxytag="matrix::operator()" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double &amp; matrix::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator na ksztalt fortranowego 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a34" doxytag="matrix::operator+=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator+=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+suma 2 macierzy podstawiana pod pierwsza z nich 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a35" doxytag="matrix::operator+=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator+=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">long&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone dodawanie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a36" doxytag="matrix::operator+=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator+=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone dodawanie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a37" doxytag="matrix::operator+=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator+=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone dodawanie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a38" doxytag="matrix::operator+=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator+=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone dodawanie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a39" doxytag="matrix::operator-=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator-=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+roznica 2 macierzy podstawiana pod pierwsza z nich 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a40" doxytag="matrix::operator-=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator-=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">long&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone odejmowanie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a41" doxytag="matrix::operator-=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator-=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone odejmowanie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a42" doxytag="matrix::operator-=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator-=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone odejmowanie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a43" doxytag="matrix::operator-=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator-=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone odejmowanie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a44" doxytag="matrix::operator/=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator/=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">long&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone dzielenie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a45" doxytag="matrix::operator/=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator/=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone dzielenie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a46" doxytag="matrix::operator/=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator/=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone dzielenie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a47" doxytag="matrix::operator/=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator/=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+przeciarzone dzielenie do kazdego elementu macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a48" doxytag="matrix::operator=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> &amp; matrix::operator=           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator przypisania 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a49" doxytag="matrix::operator==" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> bool matrix::operator==           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator rownosc 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a50" doxytag="matrix::operator[]" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classCslice__iter.html">Cslice_iter</a>&lt; double &gt; matrix::operator[]           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>i</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator pojedynczy dla stalych jak w c 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a51" doxytag="matrix::operator[]" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; double &gt; matrix::operator[]           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>i</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator pojedynczy jak w c 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a52" doxytag="matrix::qr" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> int matrix::qr           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>wr</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>wi</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja liczaca wartosci wlasne metoda qr dla macierzy Hessenberga 
+<p>
+====================================================================* <br>
+ qr wylicza wartosci wlasne dla dowolnej macierzy Hassenberga <br>
+<br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ a matrix a; <br>
+ gorna macierz Hassenberga bez dodatkowych inform. <br>
+ wr wektor czesci rzeczywistych wartosci wlasnych <br>
+<br>
+ wi wektor czesci urojonych wartosci wlasnych <br>
+ ====================================================================<br>
+ <br>
+ funkcje: <br>
+ ======= <br>
+ <br>
+ zdefinoiwane stale: <br>
+ =================== <br>
+ MACH_EPS dokladnosc dla danej maszyny <br>
+ ZERO == 0.0 <br>
+ ONE == 1.0 <br>
+ <hr>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a53" doxytag="matrix::qr_full" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::qr_full           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>wr</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>wi</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja liczaca wartosci wlasne dowolnej macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a54" doxytag="matrix::resize" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::resize           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>m</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zmieniajaca wielkosc macierzy o wym n na m 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a55" doxytag="matrix::resize" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::resize           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zmieniajaca wielkosc macierzy (tworzy kwadratowa o wym n) 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a56" doxytag="matrix::size" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> size_t matrix::size           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca rozmiar macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a57" doxytag="matrix::slad" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double matrix::slad           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja liczaca slad dla macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a58" doxytag="matrix::trans" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> matrix::trans           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja transponujaca macierz 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a59" doxytag="matrix::tridiag" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::tridiag           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+trojdiagonalizacja macierzy symetrycznej 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a60" doxytag="matrix::trisym" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::trisym           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>Z</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>D</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja liczaca wartosci wlasne macierzy trojdiagonalnej symetrycznej 
+<p>
+====================================================================* <br>
+ trisym znajduje wartosci wlasne oraz wektory wlasne <br>
+<br>
+ dla macierzy trojdiagonalnej <br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ Z matrix Z; <br>
+ macierz z wektorami wlasnymi <br>
+ D wektor z wartosciami wlasnymi <br>
+ ====================================================================<br>
+ <br>
+ funkcje: SIGN <br>
+ ======= <br>
+ <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a61" doxytag="matrix::ujacobi" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void matrix::ujacobi           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::valarray&lt; double &gt; &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>E</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>V</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja liczaca wartosci wlasne macierzy symetrycznej 
+<p>
+====================================================================* <br>
+ ujacobi znajduje wartosci wlasne oraz wektory wlasne <br>
+<br>
+ macierzy kwadratowej symetrycznej <br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ *this matrix *this; czyli macierz wywolywana <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ V matrix V <br>
+ macierz z wektorami wlasnymi <br>
+ E wektor wartosci wlasnych <br>
+<br>
+ ewentualnie funkcja moze zwracac rownierz libze rotacji <br>
+ ====================================================================<br>
+ <br>
+ funkcje: jacobi <br>
+ ======= <br>
+ <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="a62" doxytag="matrix::wiersz" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classCslice__iter.html">Cslice_iter</a>&lt; double &gt; matrix::wiersz           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funcja zwracajaca wycinek odpowiedni staly macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a63" doxytag="matrix::wiersz" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSlice__iter.html">Slice_iter</a>&lt; double &gt; matrix::wiersz           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>a</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funcja zwracajaca wycinek odpowiedni macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a64" doxytag="matrix::wr" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> matrix::wr           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca odpowiedni wiersz 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a65" doxytag="matrix::wr_val" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> valarray&lt; double &gt; matrix::wr_val           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a66" doxytag="matrix::wr_vec" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt; double &gt; matrix::wr_vec           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+zwraca wiersz przerobiony na wektor 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a67" doxytag="matrix::wyzn" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double matrix::wyzn           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja liczaca wyznacznik 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a68" doxytag="matrix::wyzn" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double matrix::wyzn           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">size_t&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>n</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja liczaca wyznacznik dla wycinka macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentacja przyjaciół i funkcji związanych</h2>
+<a class="anchor" name="n0" doxytag="matrix::IMAX" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> int IMAX           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca wartosc maksymalna dla dwuch zmiennych naturalnych 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n1" doxytag="matrix::MIN" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> int MIN           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">int&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n2" doxytag="matrix::mnor" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> mnor           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>dlx</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>dly</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>pox</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>size_t&nbsp;</td>
+          <td class="mdname" nowrap> <em>poy</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca wycinek macierzy 
+<p>
+====================================================================* <br>
+ mnor zwraca wycinek macierzy <br>
+ ====================================================================<br>
+ <br>
+ Parametry wejscia: <br>
+ ================ <br>
+ s matrix s; czyli macierz wywolywana <br>
+ dlx size_t dlx dlugosc x <br>
+ dly size_t dly dlugosc y <br>
+ pox size_t pox dolny zakres x <br>
+ poy size_t poy dolny zakres y <br>
+ <br>
+ Parametry wyjsciowe: <br>
+ ================= <br>
+ Zwraca wybrany minor <br>
+ ====================================================================<br>
+     </td>
+  </tr>
+</table>
+<a class="anchor" name="n3" doxytag="matrix::operator *" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator *           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator mnozenia dla liczby i macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n4" doxytag="matrix::operator *" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator *           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator mnozenia dla 2 macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n5" doxytag="matrix::operator+" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator+           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator dodawania dla 2 macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n6" doxytag="matrix::operator+" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator+           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>jednos</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator dodawania od macierzy macierzy jednostkowej 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n7" doxytag="matrix::operator-" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator-           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator odejmowania dla 2 macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n8" doxytag="matrix::operator-" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classmatrix.html">matrix</a> operator-           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const <a class="el" href="classmatrix.html">matrix</a>&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>int&nbsp;</td>
+          <td class="mdname" nowrap> <em>jednos</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+operator odejmowania od macierzy macierzy jednostkowej 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n9" doxytag="matrix::operator<<" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> std::ostream&amp; operator&lt;&lt;           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::ostream &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja wypisujaca macierz do strumienia 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n10" doxytag="matrix::operator>>" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> std::istream&amp; operator&gt;&gt;           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::istream &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classmatrix.html">matrix</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja wczytujaca macierz ze strumienia 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n11" doxytag="matrix::SIGN" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> double SIGN           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>double&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zwracajaca odpowiednia wartosc bezwzgledna zalezna od znaku zmiennej b 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="n12" doxytag="matrix::SWAP" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void SWAP           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">double &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>double &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>b</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [friend]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+funkcja zamiany 2 argumentow 
+<p>
+    </td>
+  </tr>
+</table>
+<hr><h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" name="r0" doxytag="matrix::d1" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> size_t <a class="el" href="classmatrix.html#r0">matrix::d1</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r1" doxytag="matrix::d2" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> size_t <a class="el" href="classmatrix.html#r1">matrix::d2</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+rozmiar macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="r2" doxytag="matrix::v" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> std::valarray&lt;double&gt;* <a class="el" href="classmatrix.html#r2">matrix::v</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+moj kontener dla macierzy 
+<p>
+    </td>
+  </tr>
+</table>
+<hr>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="macierz_8h-source.html">macierz.h</a><li><a class="el" href="macierz_8cpp.html">macierz.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>Wygenerowano Thu May 27 19:51:31 2004 dla Silnik Genetyczny programem
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

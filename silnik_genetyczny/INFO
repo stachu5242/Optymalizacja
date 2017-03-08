@@ -1,0 +1,26 @@
+BARDZO WAZNE:
+
+Program nie liczy na razie maksimow ze wzgledu na to powell nie jest jeszcz
+przystosowany do liczenia maksimow...
+
+
+WA¯NE:
+
+Program szuka najwiêkszej/najmniejszej warto¶ci. Je¶li badana funkcja
+ma kilka maksimów (o tej samej warto¶ci) w badanym przedziale, program
+poszuka losowo jednego z nich. Nale¿y o tym pamiêtaæ 
+
+WA¯NE:
+
+Niestety program nie jest odporny na "prze³adowanie" zmiennych.
+Je¶li jaka¶ zmienna wyjdzie poza swój zakres (np. double) to mamy problem,
+poniewa¿ zachowanie programu jest nieprzewidywalne. 
+Najczê¶ciej wpada w nieskoñczone pêtle lub odwo³uje siê do zmiennych
+poza ich zakresami.
+
+
+
+MOJE SPOSTRZE¯ENIA:
+
+Zbyt du¿a dok³adno¶æ (rzêdu 0.000001) mo¿e dawaæ niepoprawne wyniki.
+Dla 0.00001 jeszcze dzia³a³o.
